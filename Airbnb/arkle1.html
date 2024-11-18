@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header>
+        <h1>Detajet e Apartamentit</h1>
+    </header>
+
+    <section class="property-details">
+        <h2 id="property-title">Arkle 1</h2>
+        <img class="property-image" src="C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-11-45-56 (2).jpg" alt="Property Image" id="main-image-1">
+        
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-11-45-56.jpg" alt="Thumbnail 1" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src="C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-11-45-57 (2).jpg" alt="Thumbnail 2" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src="C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-11-45-58.jpg" alt="Thumbnail 3" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src="C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-11-45-57 (1).jpg" alt="Thumbnail 4" onclick="changeImage(this.src, 'main-image-1')">
+        </div>
+        
+        <p id="property-description"><strong>Pershkrimi</strong>: 2 dhoma, 1 tualet, kuzhine, dhome ndenje</p>
+        <p id="property-contact"><strong>Contact:</strong> Numri i telefonit: +355 69 577 7199.</p>
+        <p><a href= "https://maps.app.goo.gl/HgtHagFNYnMHRaQH8" target="_blank">Location</a></p>
+        <a href="https://www.booking.com/hotel/al/luxury-apartament-tirane.en-gb.html?label=New_English_EN_AL_27034601065-3G7RPrQQlfG_8FxYh5pXiAS637942140623%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-64415224945%3Alp9069992%3Ali%3Adec%3Adm%3Aag27034601065%3Acmp400850185&sid=961e49d1c9ffc738cbf7cd0135cdd1b9&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPuw0Jroea5KuJ8qIc0yj5mlCn84pJL0JK2vO2GdkVaTZKU1qO_Hin4aAnBKEALw_wcB&aid=318615&ucfs=1&arphpl=1&dest_id=-108649&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=2b2258e94bf400f1&srepoch=1731674325&from=searchresults" 
+        target="_blank" 
+        style="text-decoration: none; color: white; background-color: #541f1a; padding: 10px 20px; border-radius: 5px; font-weight: bold; display: inline-block;">
+         Book Now on Booking.com
+     </a>
+     
+        
+        <button onclick="goBack()">Go Back</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Property Showroom</p>
+    </footer>
+
+    <script>
+        function changeImage(src, imageId) {
+            document.getElementById(imageId).src = src; // Change the main image to the clicked thumbnail
+        }
+
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>
